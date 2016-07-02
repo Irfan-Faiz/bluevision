@@ -1,23 +1,3 @@
-// ---------------------------------------------------
-// BLOGTOC
-// ---------------------------------------------------
-// BlogToc creates a clickable Table Of Contents for
-// Blogger Blogs.
-// It uses the JSON post feed, and create a ToC of it.
-// The ToC can be sorted by title or by date, both
-// ascending and descending, and can be filtered by
-// label.
-// ---------------------------------------------------
-// Author: Beautiful Beta
-// Url: http://beautifulbeta.blogspot.com
-// Version: 2
-// Date: 2007-04-12
-// ---------------------------------------------------
-// Modified by Aneesh 
-// www.bloggerplugins.org
-// Date : 02-08-2011
-// global arrays
-
    var postTitle = new Array();     // array of posttitles
    var postUrl = new Array();       // array of posturls
    var postDate = new Array();      // array of post publish dates
@@ -189,20 +169,20 @@ function displayToc(filter) {
    var tocHead3 = 'KATEGORI';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
-      tocTool1 += ' (descending)';
-      tocTool2 += ' (newest first)';
+      tocTool1 += ' (Menurun)';
+      tocTool2 += ' (Rilis Terbaru)';
    }
    if (sortBy == "titledesc") { 
-      tocTool1 += ' (ascending)';
-      tocTool2 += ' (newest first)';
+      tocTool1 += ' (Menaik)';
+      tocTool2 += ' (Rilis Terbaru)';
    }
    if (sortBy == "dateoldest") { 
-      tocTool1 += ' (ascending)';
-      tocTool2 += ' (newest first)';
+      tocTool1 += ' (Menaik)';
+      tocTool2 += ' (Rilis Terbaru)';
    }
    if (sortBy == "datenewest") { 
-      tocTool1 += ' (ascending)';
-      tocTool2 += ' (oldest first)';
+      tocTool1 += ' (Menaik)';
+      tocTool2 += ' (Rilis Terdahulu)';
    }
    if (postFilter != '') {
       tocTool3 = 'Click to show all posts';
